@@ -1,0 +1,37 @@
+# 1. Install homebrew (https://brew.sh/)
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+
+# 2. Run
+
+brew install duti
+
+
+
+# 3. Check which apps can open .R files with
+
+duti -x R
+
+
+
+# 4. Get RStudio's id
+
+osascript -e 'id of app "RStudio"'
+
+
+
+# 5. Use the output to replace com.rstudio.desktop below (or leave as is if the same)
+
+duti -s com.rstudio.desktop .R all
+
+
+
+# 6. Check again which apps can open .R files with
+
+duti -x R
+
+
+# Amended from https://rud.is/b/2020/02/06/prying-r-script-files-away-from-xcode-et-al-on-macos/ 
+

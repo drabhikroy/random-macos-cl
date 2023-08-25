@@ -1,0 +1,17 @@
+# keeps folders
+
+cd containing_folder
+mv */* .
+
+
+# deletes empty folders
+
+cd containing_folder
+mkdir ../foo
+mv */* ../foo/
+rmdir *
+mv ../foo/* .
+rmdir ../foo
+
+
+Source: https://apple.stackexchange.com/questions/312408/merging-multiple-folders

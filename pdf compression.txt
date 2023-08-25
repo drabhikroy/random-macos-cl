@@ -1,0 +1,9 @@
+pdf2ps file.pdf file.ps
+ps2pdf file.ps file-optimized.pdf
+
+/screen, /default, /ebook, /printer, /prepress, /PSL2Printer
+
+gs -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -dNOPAUSE -dBATCH \
+-sOutputFile=pubfacets.pdf "publication choropleth facet map by state.pdf"
+
+# A good overview of the available options: https://stackoverflow.com/questions/10450120/optimize-pdf-files-with-ghostscript-or-other/10453202#10453202

@@ -1,0 +1,4 @@
+# 1. Install ImageMagick from https://imagemagick.org/script/download.php/Mac-OS-X-Binary-Release#macosx
+# 2. Play around with strengths below
+
+magick mogrify -quality 100 -density 300 -format png  *.pdf
