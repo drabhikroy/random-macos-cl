@@ -1,0 +1,1 @@
+git add . && git commit -m commands "Update" && git checkout commands && git push https://github.com/drabhikroy/random-macos-cl.git commands:commands
